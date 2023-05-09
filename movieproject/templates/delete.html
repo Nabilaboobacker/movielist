@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="" method="post">
+  {% csrf_token %}
+  You really want to delete<br>
+  <a class="btn btn-sm btn-dark" href="{% url 'movieapp:home' %}" >No, go home</a>
+  <input class="btn btn-sm btn-light" type="submit" value="Delete">
+
+</form>
+
+{% endblock %}
